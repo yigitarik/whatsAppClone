@@ -16,6 +16,7 @@
 		3A8616F62C5E9DF10063E145 /* whatsAppCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8616F52C5E9DF10063E145 /* whatsAppCloneTests.swift */; };
 		3A8617002C5E9DF10063E145 /* whatsAppCloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8616FF2C5E9DF10063E145 /* whatsAppCloneUITests.swift */; };
 		3A8617022C5E9DF10063E145 /* whatsAppCloneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8617012C5E9DF10063E145 /* whatsAppCloneUITestsLaunchTests.swift */; };
+		3A8617102C5EA3CB0063E145 /* application_bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A86170F2C5EA3CB0063E145 /* application_bar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3A8616FB2C5E9DF10063E145 /* whatsAppCloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = whatsAppCloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A8616FF2C5E9DF10063E145 /* whatsAppCloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whatsAppCloneUITests.swift; sourceTree = "<group>"; };
 		3A8617012C5E9DF10063E145 /* whatsAppCloneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whatsAppCloneUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3A86170F2C5EA3CB0063E145 /* application_bar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = application_bar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		3A8616DD2C5E9DEE0063E145 /* whatsAppClone */ = {
 			isa = PBXGroup;
 			children = (
+				3A86170E2C5EA39E0063E145 /* components */,
 				3A8616DE2C5E9DEE0063E145 /* AppDelegate.swift */,
 				3A8616E02C5E9DEE0063E145 /* SceneDelegate.swift */,
 				3A8616E22C5E9DEE0063E145 /* ViewController.swift */,
@@ -125,6 +128,14 @@
 				3A8617012C5E9DF10063E145 /* whatsAppCloneUITestsLaunchTests.swift */,
 			);
 			path = whatsAppCloneUITests;
+			sourceTree = "<group>";
+		};
+		3A86170E2C5EA39E0063E145 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				3A86170F2C5EA3CB0063E145 /* application_bar.swift */,
+			);
+			path = components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A8617102C5EA3CB0063E145 /* application_bar.swift in Sources */,
 				3A8616E32C5E9DEE0063E145 /* ViewController.swift in Sources */,
 				3A8616DF2C5E9DEE0063E145 /* AppDelegate.swift in Sources */,
 				3A8616E12C5E9DEE0063E145 /* SceneDelegate.swift in Sources */,
