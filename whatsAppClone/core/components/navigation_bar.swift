@@ -22,17 +22,18 @@ class NavBar: UITabBarController {
         let chatsController = ChatsViewController()
         let settingsController = SettingsViewController()
         
-        updatesController.tabBarItem = UITabBarItem(title: "Updates", image: nil, tag: 0)
-        callsController.tabBarItem = UITabBarItem(title: "Calls", image: nil, tag: 1)
-        communitiesController.tabBarItem = UITabBarItem(title: "Communities", image: nil, tag: 2)
-        chatsController.tabBarItem = UITabBarItem(title: "Chats", image: nil, tag: 3)
-        settingsController.tabBarItem = UITabBarItem(title: "Settings", image: nil, tag: 4)
+        updatesController.tabBarItem = UITabBarItem(title: "Updates", image: UIImage(named: "updates"), selectedImage: UIImage(named:"updatesActive"))
+        callsController.tabBarItem = UITabBarItem(title: "Calls", image: UIImage(named: "calls"), selectedImage: UIImage(named: "callsActive"))
+        communitiesController.tabBarItem = UITabBarItem(title: "Communities", image: UIImage(named: "communities"), selectedImage: UIImage(named: "communitiesActive"))
+        chatsController.tabBarItem = UITabBarItem(title: "Chats", image: UIImage(named: "chats"), selectedImage: UIImage(named: "chatsActive"))
+        settingsController.tabBarItem = UITabBarItem(title: "Settings", image: UIImage(named: "settings"), selectedImage: UIImage(named: "settingsActive"))
         
         viewControllers = [updatesController,callsController,communitiesController,chatsController,settingsController]
     }
     
     func setTabbarAppereance(){
-        self.tabBar.barTintColor = .blue
+        self.tabBar.tintColor = .black
+         
         self.tabBar.backgroundColor = UIColor(red: 244, green: 244, blue: 244, alpha: 1)
         // self.tabBar.layer.borderColor 
     }

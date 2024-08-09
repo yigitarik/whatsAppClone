@@ -21,6 +21,9 @@
 		3A86171A2C626D790063E145 /* communities_view_controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8617192C626D790063E145 /* communities_view_controller.swift */; };
 		3A86171C2C626D8A0063E145 /* chats_view_controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A86171B2C626D8A0063E145 /* chats_view_controller.swift */; };
 		3A86171E2C626D960063E145 /* settings_view_controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A86171D2C626D960063E145 /* settings_view_controller.swift */; };
+		3A8617312C653B3F0063E145 /* image_extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8617302C653B3F0063E145 /* image_extension.swift */; };
+		3A8617372C653CED0063E145 /* SVGKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3A8617362C653CED0063E145 /* SVGKit */; };
+		3A8617392C653CF20063E145 /* SVGKitSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3A8617382C653CF20063E145 /* SVGKitSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,7 @@
 		3A8617192C626D790063E145 /* communities_view_controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = communities_view_controller.swift; sourceTree = "<group>"; };
 		3A86171B2C626D8A0063E145 /* chats_view_controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chats_view_controller.swift; sourceTree = "<group>"; };
 		3A86171D2C626D960063E145 /* settings_view_controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settings_view_controller.swift; sourceTree = "<group>"; };
+		3A8617302C653B3F0063E145 /* image_extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = image_extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A8617392C653CF20063E145 /* SVGKitSwift in Frameworks */,
+				3A8617372C653CED0063E145 /* SVGKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +99,7 @@
 				3A8616F42C5E9DF10063E145 /* whatsAppCloneTests */,
 				3A8616FE2C5E9DF10063E145 /* whatsAppCloneUITests */,
 				3A8616DC2C5E9DEE0063E145 /* Products */,
+				3A8617322C653BDC0063E145 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,7 +116,6 @@
 		3A8616DD2C5E9DEE0063E145 /* whatsAppClone */ = {
 			isa = PBXGroup;
 			children = (
-				3A8617212C62AEB50063E145 /* Resources */,
 				3A86171F2C6274F80063E145 /* core */,
 				3A8617132C6265F90063E145 /* viewModels */,
 				3A8617122C6265F30063E145 /* views */,
@@ -186,6 +192,7 @@
 		3A86171F2C6274F80063E145 /* core */ = {
 			isa = PBXGroup;
 			children = (
+				3A86172F2C653B2B0063E145 /* extensions */,
 				3A8617202C6275050063E145 /* constants */,
 				3A86170E2C5EA39E0063E145 /* components */,
 			);
@@ -199,19 +206,19 @@
 			path = constants;
 			sourceTree = "<group>";
 		};
-		3A8617212C62AEB50063E145 /* Resources */ = {
+		3A86172F2C653B2B0063E145 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
-				3A8617222C62AEBE0063E145 /* images */,
+				3A8617302C653B3F0063E145 /* image_extension.swift */,
 			);
-			path = Resources;
+			path = extensions;
 			sourceTree = "<group>";
 		};
-		3A8617222C62AEBE0063E145 /* images */ = {
+		3A8617322C653BDC0063E145 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = images;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +237,10 @@
 			dependencies = (
 			);
 			name = whatsAppClone;
+			packageProductDependencies = (
+				3A8617362C653CED0063E145 /* SVGKit */,
+				3A8617382C653CF20063E145 /* SVGKitSwift */,
+			);
 			productName = whatsAppClone;
 			productReference = 3A8616DB2C5E9DEE0063E145 /* whatsAppClone.app */;
 			productType = "com.apple.product-type.application";
@@ -302,6 +313,10 @@
 				Base,
 			);
 			mainGroup = 3A8616D22C5E9DEE0063E145;
+			packageReferences = (
+				3A86172E2C653ADA0063E145 /* XCRemoteSwiftPackageReference "SwiftSVG" */,
+				3A8617352C653CDC0063E145 /* XCRemoteSwiftPackageReference "SVGKit" */,
+			);
 			productRefGroup = 3A8616DC2C5E9DEE0063E145 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -350,6 +365,7 @@
 				3A86171A2C626D790063E145 /* communities_view_controller.swift in Sources */,
 				3A8616DF2C5E9DEE0063E145 /* AppDelegate.swift in Sources */,
 				3A8616E12C5E9DEE0063E145 /* SceneDelegate.swift in Sources */,
+				3A8617312C653B3F0063E145 /* image_extension.swift in Sources */,
 				3A86171C2C626D8A0063E145 /* chats_view_controller.swift in Sources */,
 				3A8617162C626CDC0063E145 /* updates_view_controller.swift in Sources */,
 				3A86171E2C626D960063E145 /* settings_view_controller.swift in Sources */,
@@ -693,6 +709,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3A86172E2C653ADA0063E145 /* XCRemoteSwiftPackageReference "SwiftSVG" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mchoe/SwiftSVG";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		3A8617352C653CDC0063E145 /* XCRemoteSwiftPackageReference "SVGKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SVGKit/SVGKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3A8617362C653CED0063E145 /* SVGKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A8617352C653CDC0063E145 /* XCRemoteSwiftPackageReference "SVGKit" */;
+			productName = SVGKit;
+		};
+		3A8617382C653CF20063E145 /* SVGKitSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A8617352C653CDC0063E145 /* XCRemoteSwiftPackageReference "SVGKit" */;
+			productName = SVGKitSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3A8616D32C5E9DEE0063E145 /* Project object */;
 }

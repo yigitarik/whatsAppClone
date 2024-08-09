@@ -11,5 +11,7 @@ import UIKit
 class CommunitiesViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .green
+        
     }
 }
