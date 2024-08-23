@@ -13,6 +13,7 @@ class NavBar: UITabBarController {
         super.viewDidLoad()
         setupViewControllers()
         setTabbarAppereance()
+        
     }
     
     func setupViewControllers(){

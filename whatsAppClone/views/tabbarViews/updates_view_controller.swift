@@ -8,11 +8,14 @@
 import Foundation
 import UIKit
 
-
 class UpdatesViewController: UIViewController{
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         view.backgroundColor = .white
+        
+        addAppBarView(
+            leading: CircleIconButton())
     }
+    
 }
